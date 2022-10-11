@@ -1,8 +1,12 @@
 # tkit_scrapy_mongo
 use mongodb instead of redis and rewrite scrapy_redis py3 module
 
+# install
+>pip install tkit-scrapy-mongo
 
+# use
 ```
+# settings.py or custom_settings
 
     # 这里覆盖默认的settings配置,custom_settings settings.py
     custom_settings = dict(
