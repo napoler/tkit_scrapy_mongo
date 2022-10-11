@@ -11,15 +11,14 @@ use mongodb instead of redis and rewrite scrapy_redis py3 module
         #POOL_PROXY = "http://192.168.1.18:5010"
         CONCURRENT_REQUESTS_PER_IP = 4,
         CONCURRENT_REQUESTS_PER_DOMAIN = 4,
-        DUPEFILTER_CLASS = 'pet.tkit_scrapy_mongo.dupefilter.RFPDupeFilter',
+        DUPEFILTER_CLASS = 'tkit_scrapy_mongo.dupefilter.RFPDupeFilter',
         # 去重复
         SPIDER_MIDDLEWARES={
             # "scrapy_splash.SplashDeduplicateArgsMiddleware": 100,
-            "pet.tkit_scrapy_mongo.dupefilter.RFPDupeFilter":101
+            "tkit_scrapy_mongo.dupefilter.RFPDupeFilter":101
         }
 
-
-    )
+        )
 
 
 ```
